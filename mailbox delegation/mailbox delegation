@@ -1,0 +1,13 @@
+#Mailbox full access
+Add-MailboxPermission -identity "MarketingSGFinSvcs@angloamerican.com" -user "eugene.teow@angloamerican.com" -AccessRights fullaccess -AutoMapping $False
+
+#Mailbox send as access
+Add-RecipientPermission "credit@claremorriscu.ie" -AccessRights SendAs -Trustee "margo@claremorriscu.ie
+
+#Check the permission on mailbox
+Get-RecipientPermission -Identity CUTAB@claremorriscu.ie | fl trustee,accessrights
+Get-MailboxPermission -Identity CUTAB@claremorriscu.ie | fl user,accessrights
+
+
+
+

@@ -1,2 +1,0 @@
-#Mailbox full access
-Add-MailboxPermission -identity "MarketingSGFinSvcs@angloamerican.com" -user "eugene.teow@angloamerican.com" -AccessRights fullaccess -AutoMapping $False
